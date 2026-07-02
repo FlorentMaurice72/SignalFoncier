@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signal Foncier — Détecter la valeur invisible du foncier</title>
+<meta name="description" content="Signal Foncier analyse les terrains constructibles, les divisions parcellaires et les règles d'urbanisme pour révéler les opportunités immobilières que le marché ne voit pas.">
+<style>
+  :root {
+    --ink: #1a1f2b;
+    --paper: #faf8f4;
+    --accent: #b5502f;
+    --muted: #5a6270;
+    --line: #e2ddd3;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+
+  h1, h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  header .logo {
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 0.02em;
+  }
+
+  nav a {
+    color: var(--ink);
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 0.95rem;
+  }
+
+  nav a:hover { color: var(--accent); }
+
+  .hero {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 5rem 2rem 4rem;
+    text-align: center;
+  }
+
+  .hero .tagline {
+    display: inline-block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    padding: 0.35rem 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero p.subtitle {
+    font-size: 1.15rem;
+    color: var(--muted);
+    margin-bottom: 2rem;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background: var(--ink);
+    color: var(--paper);
+    text-decoration: none;
+    padding: 0.85rem 2rem;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+
+  .cta-button:hover { background: var(--accent); }
+
+  section {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+  }
+
+  section h2 {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+
+  .card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card p {
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+
+  .approach {
+    background: #fff;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    counter-reset: step;
+  }
+
+  .step {
+    position: relative;
+    padding-left: 2.5rem;
+  }
+
+  .step::before {
+    counter-increment: step;
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--paper);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  .step h3 { font-size: 1rem; margin-bottom: 0.4rem; }
+  .step p { color: var(--muted); font-size: 0.9rem; }
+
+  .contact {
+    text-align: center;
+  }
+
+  .contact p {
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+  }
+
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Signal Foncier</div>
+  <nav>
+    <a href="#analyses">Analyses</a>
+    <a href="#approche">Approche</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <span class="tagline">Le média indépendant des investisseurs fonciers</span>
+  <h1>Détecter la valeur invisible du foncier</h1>
+  <p class="subtitle">
+    Signal Foncier analyse les terrains constructibles, les divisions parcellaires
+    et les règles d'urbanisme pour révéler les opportunités immobilières que le
+    marché ne voit pas.
+  </p>
+  <a href="#contact" class="cta-button">Recevoir nos analyses</a>
+</div>
+
+<section id="analyses">
+  <h2>Ce que nous décryptons</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Terrains constructibles</h3>
+      <p>Repérage et analyse des fonciers disponibles à fort potentiel de construction.</p>
+    </div>
+    <div class="card">
+      <h3>Divisions parcellaires</h3>
+      <p>Décryptage des opérations de découpage foncier et de leur intérêt économique.</p>
+    </div>
+    <div class="card">
+      <h3>Règles d'urbanisme</h3>
+      <p>Lecture des PLU et documents réglementaires pour évaluer le potentiel réel d'un terrain.</p>
+    </div>
+    <div class="card">
+      <h3>Opportunités cachées</h3>
+      <p>Mise en lumière de gisements de valeur que les acteurs traditionnels du marché ignorent.</p>
+    </div>
+  </div>
+</section>
+
+<section id="approche" class="approach">
+  <h2>Notre approche</h2>
+  <div class="steps">
+    <div class="step">
+      <h3>Veille foncière</h3>
+      <p>Suivi continu des mutations, permis et documents d'urbanisme publiés.</p>
+    </div>
+    <div class="step">
+      <h3>Croisement de données</h3>
+      <p>Confrontation des sources cadastrales, réglementaires et de marché.</p>
+    </div>
+    <div class="step">
+      <h3>Enquête et analyse</h3>
+      <p>Vérification de terrain et mise en contexte investigative des signaux détectés.</p>
+    </div>
+    <div class="step">
+      <h3>Publication</h3>
+      <p>Diffusion d'analyses éditoriales destinées aux investisseurs fonciers avertis.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Restez informé</h2>
+  <p>Signal Foncier est un média d'analyse et de recherche, pas une plateforme.<br>
+     Contactez-nous pour échanger sur nos publications.</p>
+  <a href="mailto:contact@signalfoncier.fr" class="cta-button">Nous contacter</a>
+</section>
+
+<footer>
+  &copy; 2026 Signal Foncier — Média indépendant des investisseurs fonciers et de l'analyse du potentiel constructible.
+</footer>
+
+</body>
+</html>
