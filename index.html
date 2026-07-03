@@ -3,8 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Signal Foncier — Détecter la valeur invisible du foncier</title>
-<meta name="description" content="Signal Foncier analyse les terrains constructibles, les divisions parcellaires et les règles d'urbanisme pour révéler les opportunités immobilières que le marché ne voit pas.">
+<meta name="description" content="Signal Foncier est un média indépendant qui analyse les terrains constructibles, les divisions parcellaires et les règles d'urbanisme pour révéler les opportunités invisibles du marché immobilier.">
+<meta name="author" content="Signal Foncier">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Signal Foncier — Analyse du foncier">
+<meta property="og:description" content="Média indépendant d'analyse du foncier et des opportunités immobilières invisibles.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Signal Foncier">
+<meta name="twitter:description" content="Analyse du foncier et des opportunités immobilières invisibles.">
+
+<meta name="theme-color" content="#1a1f2b">
+
 <style>
   :root {
     --ink: #1a1f2b;
@@ -123,6 +137,18 @@
     font-size: 0.95rem;
   }
 
+  .manifesto {
+    max-width: 700px;
+    text-align: center;
+  }
+
+  .manifesto p {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.35rem;
+    line-height: 1.55;
+    color: var(--ink);
+  }
+
   .approach {
     background: #fff;
     border-top: 1px solid var(--line);
@@ -178,6 +204,56 @@
     font-size: 0.85rem;
     color: var(--muted);
   }
+
+  @media (max-width: 640px) {
+    header {
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      padding: 1rem 1.25rem;
+    }
+
+    nav a {
+      margin-left: 0;
+      margin-right: 1.25rem;
+      font-size: 0.9rem;
+    }
+
+    .hero {
+      padding: 3rem 1.25rem 2.5rem;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero p.subtitle {
+      font-size: 1rem;
+    }
+
+    section {
+      padding: 2.5rem 1.25rem;
+    }
+
+    section h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .manifesto p {
+      font-size: 1.15rem;
+    }
+
+    .grid,
+    .steps {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .cta-button {
+      width: 100%;
+      text-align: center;
+    }
+  }
 </style>
 </head>
 <body>
@@ -186,20 +262,21 @@
   <div class="logo">Signal Foncier</div>
   <nav>
     <a href="#analyses">Analyses</a>
-    <a href="#approche">Approche</a>
+    <a href="#pourquoi">Pourquoi</a>
+    <a href="#methode">Méthode</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <div class="hero">
   <span class="tagline">Le média indépendant des investisseurs fonciers</span>
-  <h1>Détecter la valeur invisible du foncier</h1>
+  <h1>Explorer l'angle mort du marché foncier</h1>
   <p class="subtitle">
-    Signal Foncier analyse les terrains constructibles, les divisions parcellaires
-    et les règles d'urbanisme pour révéler les opportunités immobilières que le
-    marché ne voit pas.
+    Signal Foncier étudie les terrains, les découpages et les règles d'urbanisme
+    pour donner une lecture territoriale que les circuits classiques de
+    l'immobilier laissent de côté.
   </p>
-  <a href="#contact" class="cta-button">Recevoir nos analyses</a>
+  <a href="#contact" class="cta-button">S'abonner aux analyses</a>
 </div>
 
 <section id="analyses">
@@ -224,8 +301,17 @@
   </div>
 </section>
 
-<section id="approche" class="approach">
-  <h2>Notre approche</h2>
+<section id="pourquoi" class="manifesto">
+  <h2>Un média sur le foncier</h2>
+  <p>
+    Le foncier est le point d'entrée invisible de la création de valeur immobilière.
+    Signal Foncier analyse les signaux faibles : urbanisme, mutations, divisions,
+    tensions locales — là où la valeur se forme avant que le marché ne la voie.
+  </p>
+</section>
+
+<section id="methode" class="approach">
+  <h2>Notre méthode</h2>
   <div class="steps">
     <div class="step">
       <h3>Veille foncière</h3>
@@ -247,10 +333,10 @@
 </section>
 
 <section id="contact" class="contact">
-  <h2>Restez informé</h2>
+  <h2>Suivre les analyses foncières</h2>
   <p>Signal Foncier est un média d'analyse et de recherche, pas une plateforme.<br>
-     Contactez-nous pour échanger sur nos publications.</p>
-  <a href="mailto:contact@signalfoncier.fr" class="cta-button">Nous contacter</a>
+     Abonnez-vous pour recevoir nos publications.</p>
+  <a href="mailto:contact@signalfoncier.fr" class="cta-button">S'abonner aux analyses</a>
 </section>
 
 <footer>
